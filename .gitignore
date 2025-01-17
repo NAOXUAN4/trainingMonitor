@@ -8,7 +8,6 @@
 .buildlog/
 .history
 .svn/
-migrate_working_dir/
 
 # IntelliJ related
 *.iml
@@ -16,28 +15,56 @@ migrate_working_dir/
 *.iws
 .idea/
 
-# The .vscode folder contains launch configuration and tasks you configure in
-# VS Code which you may wish to be included in version control, so this line
-# is commented out by default.
-#.vscode/
+# The .vscode folder contains project settings for Visual Studio Code.
+.vscode/
 
 # Flutter/Dart/Pub related
-**/doc/api/
-**/ios/Flutter/.last_build_id
 .dart_tool/
 .flutter-plugins
 .flutter-plugins-dependencies
+.packages
 .pub-cache/
 .pub/
 /build/
 
-# Symbolication related
-app.*.symbols
+# Symbolic links
+*.lnk
 
-# Obfuscation related
-app.*.map.json
+# Android Studio / IntelliJ
+*.ijwb
 
-# Android Studio will place build artifacts here
-/android/app/debug
-/android/app/profile
-/android/app/release
+# Android build artifacts
+/android/.gradle
+/android/captures/
+/android/gradlew
+/android/gradlew.bat
+/android/local.properties
+/android/app/build/
+/android/app/src/main/assets/flutter_assets/
+/android/app/src/main/assets/fonts/
+/android/app/src/main/assets/shaders/
+/android/app/src/main/res/drawable-*/app_icon.png
+/android/app/src/main/res/mipmap-*/app_icon.png
+
+# iOS/XCode related
+.iOS/
+.macos/
+.iOS/Flutter/.last_build_id
+.iOS/Runner/*.mode1v3
+.iOS/Runner/*.pbxuser
+.iOS/Runner/*.perspectivev3
+.iOS/Runner/.schemes/
+.iOS/Runner/xcuserdata/
+.iOS/Runner/Profile/
+.iOS/Runner/Classes/
+.iOS/Runner/Assets.xcassets/
+.iOS/Runner/Assets.car
+.iOS/Runner/fastlane/
+.iOS/Runner/GeneratedPluginRegistrant.h
+.iOS/Runner/GeneratedPluginRegistrant.m
+.iOS/Runner/Runner-Bridging-Header.h
+.iOS/Runner/Runner.xcodeproj/project.xcworkspace/xcshareddata/IDEWorkspaceChecks.plist
+.iOS/Runner/Runner.xcodeproj/project.xcworkspace/xcshareddata/WorkspaceSettings.xcsettings
+.iOS/Runner/Runner.xcodeproj/xcuserdata/
+.iOS/Runner/Runner.xcworkspace/xcshareddata/WorkspaceSettings.xcsettings
+.iOS/Runner/Runner.xcworkspace/xcuserdata/
