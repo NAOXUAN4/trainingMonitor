@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:training_monitor/views/Gennav/genNav_index.dart';
 
 import '../views/homePage/homePage_index.dart';
 
@@ -10,7 +11,12 @@ class Routes{
         return pageRoute(
           HomePage(),
           settings: settings,
-        );break;
+        );
+      case RouteName.home:
+        return pageRoute(
+          GenNav(),
+          settings: settings,
+        );
       default:
         return pageRoute(
           HomePage(),
