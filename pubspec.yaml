@@ -59,8 +59,7 @@ dependencies:
   shared_preferences: ^2.0.15
   #12.flutter_html
   flutter_html: ^3.0.0-alpha.6
-  #sidebarx:
-  sidebarx: ^0.17.1
+
   #13.persistent_bottom_nav_bar:
   persistent_bottom_nav_bar: ^6.2.1
 

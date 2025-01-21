@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:training_monitor/views/Gennav/genNav_index.dart';
+import 'package:training_monitor/views/user/userPage_index.dart';
 
 import '../views/homePage/homePage_index.dart';
 
@@ -12,14 +13,19 @@ class Routes{
           HomePage(),
           settings: settings,
         );
-      case RouteName.home:
+      case RouteName.userPage:
+        return pageRoute(
+          UserPage(),
+          settings: settings,
+        );
+      case RouteName.nav:
         return pageRoute(
           GenNav(),
           settings: settings,
         );
       default:
         return pageRoute(
-          HomePage(),
+          GenNav(),
           settings: settings,
         );
     }
@@ -46,10 +52,10 @@ class Routes{
 
 
 class RouteName{
-  static const String home = "/";
+  static const String nav = "/";
   static const String homePage = "/homePage";
-  static const String LoginPage = "/LoginPage";
-  static const myInfo = "/myInfo";
+  static const String LoginPage = "/loginPage";
+  static const String userPage = "/userPage";
 
 }
 

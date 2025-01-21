@@ -1,7 +1,5 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:persistent_bottom_nav_bar/persistent_bottom_nav_bar.dart';
-import 'package:sidebarx/sidebarx.dart';
 
 class HomePage extends StatefulWidget {
   @override
@@ -29,19 +27,7 @@ class _HomePageState extends State<HomePage> {
         title: Text("Monitor"),
       ),
       body: Center(
-        child: Row(
-          children:[
-            SidebarX(
-              controller: SidebarXController(selectedIndex: 0),
-              items: const [
-                SidebarXItem(icon: Icons.home, label: 'Home'),
-                SidebarXItem(icon: Icons.info_outline_rounded, label: 'Info'),
-              ],
-            ),
-            Text("monitor"),
-            
-          ]
-        ),
+        child: Text("HomePage"),
       ),
     );
   }
